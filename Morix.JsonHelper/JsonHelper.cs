@@ -6,14 +6,15 @@ namespace Morix
 {
     public static class JsonHelper
     {
-        private static JsonSerializerOptions _options;
+        public static JsonSerializerOptions Options { get; set; }
 
         static JsonHelper()
         {
-            _options = new JsonSerializerOptions
+            Options = new JsonSerializerOptions
             {
                 IncludeFields = true,
-                DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+                AllowTrailingCommas = true,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
             };
         }
 
@@ -109,7 +110,7 @@ namespace Morix
 
         public static string Serialize(object obj)
         {
-            return JsonSerializer.Serialize(obj, _options);
+            return JsonSerializer.Serialize(obj, Options);
         }
 
         public static T Deserialize<T>(string json)
