@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <AssemblyVersion>1.0.3</AssemblyVersion>
-    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.5</AssemblyVersion>
+    <Version>1.0.5</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <RepositoryUrl>https://github.com/morixshpk/Morix.JsonHelper</RepositoryUrl>
     <PackageTags>Extensions method for System.Text.Json</PackageTags>
-    <FileVersion>1.0.3</FileVersion>
+    <FileVersion>1.0.5</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +20,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="6.0.4" />
+    <PackageReference Include="System.Text.Json" Version="6.0.5" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\License.txt">

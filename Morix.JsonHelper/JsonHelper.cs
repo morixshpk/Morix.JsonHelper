@@ -113,6 +113,11 @@ namespace Morix
             return JsonSerializer.Serialize(obj, Options);
         }
 
+        public static string Serialize(object obj, JsonSerializerOptions options)
+        {
+            return JsonSerializer.Serialize(obj, options);
+        }
+
         public static T Deserialize<T>(string json)
         {
             return JsonSerializer.Deserialize<T>(json);
